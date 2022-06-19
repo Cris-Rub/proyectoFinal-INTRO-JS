@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bank Smile</title>
+    <title>Bank Smile - Iniciar sesion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body>
     <header class="bg-bank bg-dark pt-0">
@@ -15,8 +15,8 @@
                 <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="./index.html">
-                                <img src="./logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top bg-white rounded">
+                            <a class="navbar-brand" href="../index.html">
+                                <img src="../logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top bg-white rounded">
                                 BankSmile
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
                                         <div class="dropdown">
@@ -58,64 +58,22 @@
 
     <main class="text-black align-self-center">
         <div class="container p-5">
-            <h1>Bienvenido a BankSmile</h1>
-            <p>Por favor, selecciona a continuación tu usuario.</p>
-            <div class="row">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./users/user1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Amanda Young Lopez</h5>
-                          <p class="card-text">Importante: fecha de corte 16/07/2022</p>
-                        </div>
-                        <!-- <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul> -->
-                        <div class="card-body">
-                          <a href="./pages/login.html" class="card-link" id="user1">Iniciar sesión</a>
-                          
-                        </div>
-                    </div>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-user"></label>
+                  <a href="../index.html" id="emailHelp" class="form-text">¿No eres tu?</a>
+                  <!-- <div id="emailHelp" class="form-text">¿No eres tu?</div> -->
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./users/user2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Arturo Roman Sanchez</h5>
-                          <p class="card-text">Nueva oportunidad: tarjeta de credito nivel 3.</p>
-                        </div>
-                        <!-- <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul> -->
-                        <div class="card-body">
-                          <a href="./pages/login.html" class="card-link" id="user2">Iniciar sesión</a>
-                          
-                        </div>
-                    </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./users/user3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Cheryl Mason</h5>
-                          <p class="card-text">Hecha un vistazo a los ultimos movimientos de tu cuenta.</p>
-                        </div>
-                        <!-- <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul> -->
-                        <div class="card-body">
-                          <a href="./pages/login.html" class="card-link" id="user3">Iniciar sesión</a>
-                          
-                        </div>
-                    </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Mantener sesión abierta.</label>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+              </form>
         </div>
     </main>
 
@@ -151,7 +109,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="./code.js"></script>
+    <script src="../code.js"></script>
 
   </body>
   </body>
