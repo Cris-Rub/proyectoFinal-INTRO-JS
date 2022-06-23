@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -58,21 +58,23 @@
 
     <main class="text-black align-self-center">
         <div class="container p-5">
-            <form>
+            <form id="form-user">
+                <h3>Datos de inicio</h3>
+                <p id="userSelected"></p>
+                <a href="../index.html" id="emailHelp" class="form-text">¿No eres tu?</a>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-user"></label>
-                  <a href="../index.html" id="emailHelp" class="form-text">¿No eres tu?</a>
-                  <!-- <div id="emailHelp" class="form-text">¿No eres tu?</div> -->
+                    <label for="inputEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="inputPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword">
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Mantener sesión abierta.</label>
                 </div>
-                <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+                <button type="submit" class="btn btn-dark" id="login">Iniciar sesión</button>
               </form>
         </div>
     </main>
@@ -110,7 +112,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="../code.js"></script>
+    <script src="../users.js"></script>
 
   </body>
   </body>
-</html>
+</html> -->
